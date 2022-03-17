@@ -1,0 +1,85 @@
+
+ .header{
+    height: 22%;
+    width: 100%;
+    background-color: #2f3676;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 70%;
+}
+#grupo1{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#grupo1 li {
+    list-style: none;
+    padding: 5px;
+    
+}
+#grupo1 label{
+    margin-top: -15px;
+}
+.logo{
+    width: 200px;
+    position:relative;
+    left:100px;
+    padding: 20px;
+    border-color: 5px solid white;  
+}
+.teste{
+    position:relative;
+    padding: 20px;
+}
+ .cabecalho{
+     height: 600px;
+     width: 500px;
+     background-color:#f2f2f2;
+     border-radius: 15px;
+     box-shadow:  0 0 1em black;
+     position: absolute;
+     right: auto;
+     
+ }
+
+ .cabecalho label{
+     margin-left: 30px; 
+ }
+
+ .text-top{
+     text-align: left;
+     color: aliceblue;
+     margin-top: -70px;
+     margin-left: 25px;
+     
+ }
+
+ .adesivo{
+     padding:15px;
+ }
+
+ /*Botão incremento e decremento*/
+ #mais{
+     background-color: #2f3676;
+     
+ }
+ #menos{
+    background-color: #2f3676;
+    width: 30px;
+}
+ #grupo2{
+     padding:40px;
+     margin-right: 40px;
+ }
+ #grupo2 li{
+     list-style: none;
+     padding: 10px;
+ }
+.textoform{
+    margin-top: 0px;    
+}
+.fimbtn{
+    margin-left: 73%;
+    width: 100px;
+    padding: 20px;
+    border-color: #2f3676;
+    background-color: #2f3676;
+}

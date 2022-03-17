@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container teste">
+      
+          <div class="col-md-4"></div>
+            <div class="row col-lg-4  cabecalho">
+                    <div class="header text-center">
+                        <img src="img/logo.png " class="logo" />
+                        <p class="text-top"> Formulário <br> para compra de <br> <b>Pacote de Adesivos</p>
+                    </div>
+
+                    <div class="row" style="margin-top: -10px;">
+                        <div id="grupo1">
+                            <li>Quais adesivos: </li>
+                            <label><input type="checkbox">React</label><br><br>
+                            <label><input type="checkbox">Vue</label><br>
+                            <label><input type="checkbox">Angular</label>
+                           
+                            <li>Quantos adesivos de cada: </li><br>
+                            <input type="button" id="menos" value="-" />
+                            <input class="text-center" type="text" name="format" value="0" id="format" size="3" />
+                            <input type="button" id="mais" value="+" />
+                        </div>
+                    </div>
+                   
+                    <script type="text/javascript">
+                        function id( el ){
+                                return document.getElementById( el );
+                        }
+                        window.onload = function(){
+                                id('mais').onclick = function(){
+                                        id('format').value = parseInt( id('format').value )+1;      
+                                }
+                                id('menos').onclick = function(){
+                                        if( id('format').value>0 )
+                                                id('format').value = parseInt( id('format').value )-1;
+                                }
+                        }       
+                        </script><br>
+
+                 <p class="textoform">Observações: </p> 
+                 <textarea class="form-control z-depth-1 textoform" id="exampleFormControlTextarea6" rows="3" placeholder="Alguma duvida? Recado?"></textarea> <br>
+
+                <button type="button" class="btn btn-outline-success btn-sm fimbtn">Enviar</button>
+                
+                
+            </div>
+            <div class="col-md-4"></div>
+            
+      
+    </div>
+</body>
+</html>
